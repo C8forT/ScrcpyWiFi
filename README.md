@@ -65,3 +65,5 @@ VI.  Make sure your Android device is NOT in sleep mode and you are logged into 
     changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so
     long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network
     and that IP address has been assigned to another device.)
+    
+VII. (Optional) Create a menu item for ScrcpyWiFi.sh in your desktop's menu.  Once the menu item is created, you also can add the menu item to your panel and/or, in some destop environments, to your desktop.

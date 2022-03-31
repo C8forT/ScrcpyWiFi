@@ -1,6 +1,6 @@
 # ScrcpyWiFi
 
-The ScrcpyWiFi.sh script file mirrors your Android Device's screen to your desktop over WiFi.  
+The ScrcpyWiFi.sh script file mirrors your Android Device's screen to your Linux desktop over WiFi.  
 You can control your Android device using your keyboard and mouse, for example to read and send text messages, 
 answer and place calls, configure the device, etc.
 

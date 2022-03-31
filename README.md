@@ -6,7 +6,10 @@ You will need to connect your device to your comuputer via USB the first time yo
 
 INSTRUCTIONS:
 
-I.  Enable USB debugging on your Android device.  The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it for your specific device.
+I.  Enable USB debugging on your Android device.  
+
+    The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it
+    for your specific device.
 
 
 II.  Install the following required packages on your Linux computer:
@@ -43,7 +46,8 @@ IV.  Clone this repository:
 
     git clone https://github.com/C8forT/ScrcpyWiFi
 
-or create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  Then copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
+    or create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  Then copy the ScrcpyWiFi.sh
+    script code into the text file you just created (now it is a script file), then save and close the file.
 
 
 V.  Make the script file executable:

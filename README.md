@@ -60,6 +60,11 @@ Alternatively, you can make the script file executable in your file manager by s
 
 VI.  Make sure your Android device is NOT in sleep mode and you are logged into it.  Launch the script file on your computer and follow the directions in the popup windows.  Your android device also may have a popup message promting you to allow the connection to your computer.  If so, select "Allow".
 
+To launch ScrcpyWiFi.sh from the terminal, change to the directory where ScrcpyWiFi.sh is stored, and enter the following command:
+
+    ./ScrcpyWiFi.sh
+    
+Alternatively, you can double click the ScrcpyWiFi.sh file in your file manager to launch it.
 
     Note:  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a
     USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address

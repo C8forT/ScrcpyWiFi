@@ -17,20 +17,20 @@ II.  Install the following required packages on your Linux computer:
 
 Notes regarding the packages:
 
-    A.  The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, which are Arch Linux, KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5.  See the following notes for scrcpy:
+A.  The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, which are Arch Linux, KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5.  See the following notes for scrcpy:
 
-    B.  scrcpy compatibility in specific distributions as of March 2022:
+B.  scrcpy compatibility in specific distributions as of March 2022:
 
-    Arch Linux - The repository version of scrcpy works.
+Arch Linux - The repository version of scrcpy works.
 
-    Linux Mint 20.3 -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
+Linux Mint 20.3 -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
 
-    KDE Neon -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
+KDE Neon -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
 
-    LMDE 5 - Install scrcpy from the source code - https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
-    (the repository and snap versions of scrcpy did not work for me).
+LMDE 5 - Install scrcpy from the source code - https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
+(the repository and snap versions of scrcpy did not work for me).
 
-    If launching ScrcpyWiFi.sh at step 6 below generates an error indicating that your system has an incorrect version of adb, which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb installed on your computer.  Of course,  uninstall any other scrcpy installations first.
+If launching ScrcpyWiFi.sh at step 6 below generates an error indicating that your system has an incorrect version of adb, which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb installed on your computer.  Of course,  uninstall any other scrcpy installations first.
 
 
 III.  Reboot your computer after installing the above applications.
@@ -45,11 +45,11 @@ OR
 
 V.  Make the script file executable:
 
-    A.  In the terminal, go into the directory where the script file is stored, then enter chmod u+x ScrcpyWiFi.sh (assuming you named the file "ScrcpyWiFi.sh").
+A.  In the terminal, go into the directory where the script file is stored, then enter chmod u+x ScrcpyWiFi.sh (assuming you named the file "ScrcpyWiFi.sh").
     
 OR
     
-    B.  In your file manager, open the directory where the script file is stored, right click on the script file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equivalent for your file manager.
+B.  In your file manager, open the directory where the script file is stored, right click on the script file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equivalent for your file manager.
 
 
 VI.  Make sure your Android device is NOT in sleep mode and you are logged into it.  Launch the script file on your computer and follow the directions in the popup windows.  Your android device also may have a popup message promting you to allow the connection to your computer.  If so, select "Allow".

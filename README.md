@@ -6,10 +6,10 @@ You will need to connect your device to your comuputer via USB the first time yo
 
 INSTRUCTIONS:
 
-1.  Enable USB debugging on your Android device.  The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it for your specific device.
+I.  Enable USB debugging on your Android device.  The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it for your specific device.
 
 
-2.  Install the following required packages on your Linux computer:
+II.  Install the following required packages on your Linux computer:
 
     adb
     scrcpy
@@ -33,17 +33,17 @@ B.  scrcpy compatibility in specific distributions as of March 2022:
 If launching ScrcpyWiFi.sh at step 6 below generates an error indicating that your system has an incorrect version of adb, which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb installed on your computer.  Of course,  uninstall any other scrcpy installations first.
 
 
-3.  Reboot your computer after installing the above applications.
+III.  Reboot your computer after installing the above applications.
 
 
-4.  Clone this repository:  git clone https://github.com/C8forT/ScrcpyWiFi
+IV.  Clone this repository:  git clone https://github.com/C8forT/ScrcpyWiFi
 
     OR
    
    Create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  Then copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
 
 
-5.  Make the script file executable:
+V.  Make the script file executable:
 
     A.  In the terminal, go into the directory where the script file is stored, then enter chmod u+x ScrcpyWiFi.sh (assuming you named the file "ScrcpyWiFi.sh").
     
@@ -52,7 +52,7 @@ If launching ScrcpyWiFi.sh at step 6 below generates an error indicating that yo
     B.  In your file manager, open the directory where the script file is stored, right click on the script file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equivalent for your file manager.
 
 
-6.  Make sure your Android device is NOT in sleep mode and you are logged into it.  Launch the script file on your computer and follow the directions in the popup windows.  Your android device also may have a popup message promting you to allow the connection to your computer.  If so, select "Allow".
+VI.  Make sure your Android device is NOT in sleep mode and you are logged into it.  Launch the script file on your computer and follow the directions in the popup windows.  Your android device also may have a popup message promting you to allow the connection to your computer.  If so, select "Allow".
 
 To launch the script file on your computer, double click the script file from your file manager or launch it from the terminal (e.g., ./ScrcpyWifi.sh).  If you want to launch it from the terminal without actually entering the directory where it is stored, be sure to add to your system a path statement to that directory.  You also can create a menu item for the script code in your desktop menu, which is what I did.  I also added it to my panel.
 

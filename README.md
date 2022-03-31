@@ -30,7 +30,7 @@ Notes regarding the packages:
         1.  The repository version of scrcpy should work in Arch and any Arch based distributions.  It worked for me in Arch.
 
         2.  The scrcpy Snap package should work in Ubuntu and any Ubuntu based distributions.  In Linux Mint 20.3 and KDE Neon,
-        which are based on Ubuntu, the scrcpy Snap package worked, but the repository version did not.
+        which are based on Ubuntu, the scrcpy Snap package worked, but the repository versions did not.
         
         3.  For Debian and Debian based distributions (that are not based on Ubuntu), install scrcpy from the source code - 
             

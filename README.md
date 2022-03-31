@@ -37,16 +37,18 @@ If launching ScrcpyWiFi generates an error indicating that your system has an in
 3.  Create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  
 
 
-4.  Copy the ScrcpyWiFi.sh script code into the text file you just created.
+4.  Copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
 
 
-5.  Make the file executable:
+5.  Make the script file executable:
 
-    A.  In the terminal, go into the directory where the file is stored, then enter chmod u+x ScrcpyWiFi.sh (assuming you named the file "ScrcpyWiFi.sh").
+    A.  In the terminal, go into the directory where the script file is stored, then enter chmod u+x ScrcpyWiFi.sh (assuming you named the file "ScrcpyWiFi.sh").
     
     OR
     
-    B.  In your file manager, open the directory where the file is stored, right click on the file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equavlent for your file manager.
+    B.  In your file manager, open the directory where the script file is stored, right click on the script file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equavlent for your file manager.
 
 
-6.  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that IP address has been assigned to another device.)
+6.  Launch the script file.  E.g., double click the script file from your file manager or launch it from the terminal.  If you want to launch it from the terminal without actually entering the directory, be sure to add to your system a path statement to the directory where you stored the file.  You also can create a menu item for the script code in your desktop menu, which is what I did.  I also added it to my panel.
+
+Note:  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that IP address has been assigned to another device.)

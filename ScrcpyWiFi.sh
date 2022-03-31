@@ -11,7 +11,7 @@
 
 new_conn () {
   
-zenity --info --text="Connect Phone Via USB - Make Sure Phone is Not in Sleep Mode nor Locked" --title="Connected Phone" --width=250 --height=150  
+zenity --info --text="`printf "Connect Phone to Computer Via USB - Make Sure Phone is Not in Sleep Mode nor Locked\n\nThen Click OK to Continue"`" --title="Connect Phone" --width=250 --height=150
 # Pop-up Window with instructions
 		
 adb kill-server
@@ -40,7 +40,7 @@ echo "$ipfull" >| $HOME/.config/scrcpy/ip.txt
 adb connect $ipfull  
 # Connect adb to the device using the IP address:portnumber
     		
-zenity --info --text="Disconnect USB Cable From Phone Now" --title="Phone Connected" --width=250 --height=150  
+zenity --info --text="`printf "Disconnect USB Cable From Phone Now\n\nThen Click OK to Continue"`" --title="Phone Connecting" --width=250 --height=150
 # Pop-up Window with instructions
     
 }
@@ -85,7 +85,7 @@ then
 else
 # If Scrcpy does not output "INFO", indicating it has not successfully launched
  	    
-	zenity --info --text="Connection Failed - Retrying" --title="Phone Not Connected" --width=250 --height=150  
+	zenity --info --text="`printf "WiFi Connection to Phone Failed\n\nClick OK to Retry"`" --title="Phone Not Connected" --width=250 --height=150  
 	# Pop-up Window with instructions
 	
 	kill $pid
@@ -169,7 +169,3 @@ else
 	fi
    	
 fi
-
-
-
-

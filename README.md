@@ -15,8 +15,7 @@ answer and place calls, configure the device, etc.
 
 Notes:
 
-A.  The repository versions of adb and zenity worked for me in each of the distributions I tried the script code on,
-which are Arch Linux, KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5.  See the following notes for scrcpy:
+A.  The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, which are Arch Linux, KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5.  See the following notes for scrcpy:
 
 B.  scrcpy compatibility in specific distributions as of March 2022:
 

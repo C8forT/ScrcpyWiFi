@@ -19,7 +19,7 @@ II.  Install the following required packages on your Linux computer:
     scrcpy
     zenity
 
-Notes regarding the packages:
+Notes regarding installation of the required packages:
 
     A.  adb and zenity compatibility as of March 2022:
     

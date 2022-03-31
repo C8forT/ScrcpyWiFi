@@ -25,7 +25,7 @@ B.  scrcpy compatibility in specific distributions as of March 2022:
 
     KDE Neon -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
 
-    LMDE 5 - Install from the source code - https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
+    LMDE 5 - Install scrcpy from the source code - https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
     (the repository and snap versions of scrcpy did not work for me).
 
 

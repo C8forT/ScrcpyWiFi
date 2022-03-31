@@ -6,11 +6,11 @@ You will need to connect your device to your comuputer via USB the first time yo
 
 INSTRUCTIONS:
 
-I.  Enable USB debugging on your Android device.  
+I.  Enable USB debugging on your Android device.  Also enable the option to "Disable adb authorization timeout" if your device has that option.   
 
     The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it
     for your specific device.  Usually you need to enable Developer options on your Android device, then under Developer options
-    enable USB debugging.
+    enable USB debugging and enable option to "Disable adb authorization timeout".
 
 
 II.  Install the following required packages on your Linux computer:

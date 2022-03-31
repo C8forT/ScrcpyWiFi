@@ -11,8 +11,8 @@ INSTRUCTIONS:
 2.  The following packages are required to be installed on your Linux computer for the script code to work:
 
     adb    
-    scrcpy
-    zenity
+    scrcpy 
+    zenity 
 
 Notes:
 

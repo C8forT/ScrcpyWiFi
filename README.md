@@ -4,13 +4,13 @@ ScrcpyWiFi.sh mirrors your Android Device's screen to your Linux desktop over Wi
 
 You will need to connect your device to your comuputer via USB the first time you execute the script code, but should not need to do so after that unless your device's IP address changes.
 
-
 INSTRUCTIONS:
 
 I.  Enable USB debugging on your Android device.  
 
     The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it
-    for your specific device.
+    for your specific device.  Usually you need to enable developer options on your Android device, then under developer options
+    enable USB debugging.
 
 
 II.  Install the following required packages on your Linux computer:

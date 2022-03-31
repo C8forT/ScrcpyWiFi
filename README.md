@@ -34,10 +34,11 @@ If launching ScrcpyWiFi generates an error indicating that your system has an in
 2.  Reboot your computer after installing the above applications.
 
 
-3.  Create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  
+3.  Clone this repository
 
-
-4.  Copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
+    OR
+   
+   Create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  Then copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
 
 
 5.  Make the script file executable:

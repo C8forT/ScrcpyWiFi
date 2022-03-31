@@ -5,7 +5,7 @@ You can control your Android device using your keyboard and mouse, for example t
 answer and place calls, configure the device, etc.
 
 
-1.  The following packages are required to be installed for it to work:
+1.  The following packages are required to be installed on your Linux computer for it to work:
 
     adb
     

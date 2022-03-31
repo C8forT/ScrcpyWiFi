@@ -79,7 +79,7 @@ launch_scrcpy () {
     then
     # If Scrcpy outputs "INFO", indicating it has successfully launched
 	
-	    exit 0
+	exit 0
         # Exit script
 
     else
@@ -130,25 +130,25 @@ else
 	#  Check to see if the ip.txt file exists
 	
 	then
-    # If the ip.txt file exists
+	# If the ip.txt file exists
                 
        	storedip=$(head -n 1 $HOME/.config/scrcpy/ip.txt) 
-		# Get the stored IP address from ip.txt
+	# Get the stored IP address from ip.txt
 	
        	if adb connect "$storedip" | grep -q unable*  
-		# Check to see if adb is unable to connect to the stored IP address
+	# Check to see if adb is unable to connect to the stored IP address
 	
 		then
-        # If adb is unable to connect to the stored IP address
+        	# If adb is unable to connect to the stored IP address
 	
 			new_conn
-    		# Execute new_conn function for adb to connect to the device
+    			# Execute new_conn function for adb to connect to the device
 			
 			launch_scrcpy
 			# Execute Function to Launch Scrcpy to display device's screen on desktop
 			    	
    		else
-        # If adb is able to connect to the stored IP address
+        	# If adb is able to connect to the stored IP address
     		
    			sleep 1
     			

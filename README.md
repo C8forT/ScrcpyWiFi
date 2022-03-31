@@ -5,7 +5,7 @@ You can control your Android device using your keyboard and mouse, for example t
 answer and place calls, configure the device, etc.
 
 
-1.  The following packages are required to be installed on your Linux computer for it to work:
+1.  The following packages are required to be installed on your Linux computer for the script code to work:
 
     adb
     
@@ -49,6 +49,6 @@ If launching ScrcpyWiFi generates an error indicating that your system has an in
     B.  In your file manager, open the directory where the script file is stored, right click on the script file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equavlent for your file manager.
 
 
-6.  Launch the script file.  E.g., double click the script file from your file manager or launch it from the terminal.  If you want to launch it from the terminal without actually entering the directory, be sure to add to your system a path statement to the directory where you stored the file.  You also can create a menu item for the script code in your desktop menu, which is what I did.  I also added it to my panel.
+6.  Launch the script file.  E.g., double click the script file from your file manager or launch it from the terminal (e.g., ./ScrcpyWifi.sh).  If you want to launch it from the terminal without actually entering the directory, be sure to add to your system a path statement to the directory where you stored the file.  You also can create a menu item for the script code in your desktop menu, which is what I did.  I also added it to my panel.
 
 Note:  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that IP address has been assigned to another device.)

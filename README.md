@@ -21,25 +21,28 @@ II.  Install the following required packages on your Linux computer:
 
 Notes regarding the packages:
 
+    
     A.  The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, 
     which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5.  See the following notes for scrcpy:
 
-    B.  scrcpy compatibility in specific distributions as of March 2022:
+    B.  scrcpy compatibility as of March 2022:
 
-    Arch Linux - The repository version of scrcpy works.
+        1.  The repository version of scrcpy should work in Arch and any Arch based distributions.  It worked for me in Arch.
 
-    Linux Mint 20.3 -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
-
-    KDE Neon -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
-
-    LMDE 5 - Install scrcpy from the source code - https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
-    (the repository and snap versions of scrcpy did not work for me).
-
+        2.  The scrcpy Snap package should work in Ubuntu and any Ubuntu based distributions.  In Linux Mint 20.3 and KDE Neon,
+        which are based on Ubuntu, the scrcpy Snap package worked, but the repository version did not.
+        
+        3.  For Debian and Debian based distributions (that are not based on Ubuntu), install scrcpy from the source code - 
+            
+            https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
+    
+        The repository and snap versions of scrcpy did not work for me in LMDE 5, which is based on Debian.
+    
     If launching ScrcpyWiFi.sh at step VI below generates an error indicating that your system has an incorrect version of adb,
     which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb
     installed on your computer.  Of course, first uninstall any other versions of scrcpy you may have intalled.  Otherwise,
     you still may get errors if you have multiple versions of scrcpy installed.
-
+    
 
 III.  Reboot your computer after installing the above applications.
 

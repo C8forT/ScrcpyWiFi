@@ -5,7 +5,9 @@ You can control your Android device using your keyboard and mouse, for example t
 answer and place calls, configure the device, etc.
 
 
-1.  The following packages are required to be installed on your Linux computer for the script code to work:
+1.  Enable USB debugging on your Android device.  The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it for your specific device.
+
+2.  The following packages are required to be installed on your Linux computer for the script code to work:
 
     adb
     
@@ -31,10 +33,10 @@ B.  scrcpy compatibility in specific distributions as of March 2022:
 If launching ScrcpyWiFi generates an error indicating that your system has an incorrect version of adb, which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb installed on your computer.  Of course,  uninstall any other scrcpy installations first.
 
 
-2.  Reboot your computer after installing the above applications.
+3.  Reboot your computer after installing the above applications.
 
 
-3.  Clone this repository (git clone https://github.com/C8forT/ScrcpyWiFi).
+4.  Clone this repository (git clone https://github.com/C8forT/ScrcpyWiFi).
 
     OR
    

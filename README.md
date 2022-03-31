@@ -21,8 +21,7 @@ II.  Install the following required packages on your Linux computer:
 
 Notes regarding the packages:
 
-    
-   A.  adb and zenity compatibility as of March 2022:
+    A.  adb and zenity compatibility as of March 2022:
     
     The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, 
     which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5. 

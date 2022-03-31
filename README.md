@@ -46,7 +46,7 @@ IV.  Clone this repository:
 
     git clone https://github.com/C8forT/ScrcpyWiFi
 
-OR create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  Then copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
+Alternatively, you can create a text file in the directory of your choice, and name the file ScrcpyWiFi.sh (or whatever else you want to call it).  Then copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
 
 
 V.  Make the script file executable.  To do so, in the terminal change to the directory where ScrcpyWiFi.sh is stored, and enter the following command:

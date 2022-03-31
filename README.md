@@ -34,7 +34,7 @@ If launching ScrcpyWiFi generates an error indicating that your system has an in
 2.  Reboot your computer after installing the above applications.
 
 
-3.  Clone this repository
+3.  Clone this repository (git clone https://github.com/C8forT/ScrcpyWiFi).
 
     OR
    

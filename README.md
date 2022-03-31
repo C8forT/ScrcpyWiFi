@@ -75,7 +75,9 @@ To launch ScrcpyWiFi.sh from the terminal, change to the directory where ScrcpyW
     
 Optionally, create a path statement, e.g., in ~/.bash_profile or ~/.bashrc, to the directory where ScrcpyWiFi.sh is stored to be able to launch ScrcpyWiFi.sh from the terminal without having to change into that directory. 
 
-    Notes:  Your computer and your Android device must be assigned IP addresses on the same subnet.  
+    Notes:  
+    
+    Your computer and your Android device must be assigned IP addresses on the same subnet.  
     
     The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a
     USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address

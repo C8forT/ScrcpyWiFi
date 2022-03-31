@@ -27,23 +27,26 @@ B.  scrcpy compatibility in specific distributions as of March 2022:
 
     LMDE 5 - Install scrcpy from the source code - https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
     (the repository and snap versions of scrcpy did not work for me).
-    
+
 If launching ScrcpyWiFi generates an error indicating that your system has an incorrect version of adb, which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb installed on your computer.  Of course,  uninstall any other scrcpy installations first.
 
 
 2.  Reboot your computer after installing the above applications.
 
 
-3.  Download the ScrcpyWiFi.sh script file and place it in a directory of your choice.  I created a directory named "Scripts" in my Home directory and placed the script file there.
+3.  Create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  
 
 
-4.  Make the ScrcpyWiFi.sh script file executable:
+4.  Copy the ScrcpyWiFi.sh script code into the text file you just created.
 
-    A.  In the terminal, go into the directory where ScrcpyWiFi.sh is stored, then enter chmod u+x ScrcpyWiFi.sh
+
+5.  Make the file executable:
+
+    A.  In the terminal, go into the directory where the file is stored, then enter chmod u+x ScrcpyWiFi.sh (assuming you named the file "ScrcpyWiFi.sh").
     
     OR
     
-    B.  In your file manager, open the directory where ScrcpyWiFi.sh is stored, right click on ScrcpyWiFi.sh, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equavlent for your file manager.
+    B.  In your file manager, open the directory where the file is stored, right click on the file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equavlent for your file manager.
 
 
-5.  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that IP address has been assigned to another device.)
+6.  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that IP address has been assigned to another device.)

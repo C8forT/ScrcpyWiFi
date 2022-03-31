@@ -22,9 +22,11 @@ II.  Install the following required packages on your Linux computer:
 Notes regarding the packages:
 
     
-    A.  The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, 
-    which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5.  See the following notes for scrcpy:
-
+   A.  adb and zenity compatibility as of March 2022:
+    
+    The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, 
+    which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5. 
+    
     B.  scrcpy compatibility as of March 2022:
 
         1.  The repository version of scrcpy should work in Arch and any Arch based distributions.  It worked for me in Arch.

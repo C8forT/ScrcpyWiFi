@@ -12,7 +12,7 @@ INSTRUCTIONS:
 
     adb
     scrcpy
-    zenity 
+    zenity
 
 Notes:
 

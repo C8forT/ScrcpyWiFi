@@ -8,7 +8,7 @@ INSTRUCTIONS:
 
 1.  Enable USB debugging on your Android device.  The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it for your specific device.
 
-2.  The following packages are required to be installed on your Linux computer for the script code to work:
+2.  Install the following packages on your Linux computer - required:
 
     adb
     scrcpy
@@ -16,9 +16,9 @@ INSTRUCTIONS:
 
 Notes:
 
-A.  The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, which are Arch Linux, KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5.  See the following notes for scrcpy:
+    A.  The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, which are Arch Linux, KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5.  See the following notes for scrcpy:
 
-B.  scrcpy compatibility in specific distributions as of March 2022:
+    B.  scrcpy compatibility in specific distributions as of March 2022:
 
     Arch Linux - The repository version of scrcpy works.
 

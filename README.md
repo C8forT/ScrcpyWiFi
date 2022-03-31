@@ -38,7 +38,7 @@ Notes regarding the packages:
             
             https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
     
-        The repository and snap versions of scrcpy did not work for me in LMDE 5, which is based on Debian.
+        The repository and Snap versions of scrcpy did not work for me in LMDE 5, which is based on Debian.
     
     If launching ScrcpyWiFi.sh at step VI below generates an error indicating that your system has an incorrect version of adb,
     which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb

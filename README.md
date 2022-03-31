@@ -47,7 +47,7 @@ Notes regarding installation of the required packages:
     you still may get errors if you have multiple versions of scrcpy installed.
     
 
-III.  Reboot your computer after installing the above applications.
+III.  Reboot your computer after installing the required packages.
 
 
 IV.  Clone this repository:

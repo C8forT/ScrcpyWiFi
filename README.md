@@ -9,7 +9,7 @@ INSTRUCTIONS:
 I.  Enable USB debugging on your Android device.  
 
     The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it
-    for your specific device.  Usually you need to enable Developer Options on your Android device, then under Developer Options
+    for your specific device.  Usually you need to enable Developer options on your Android device, then under Developer options
     enable USB debugging.
 
 

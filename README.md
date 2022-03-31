@@ -29,7 +29,7 @@ Notes regarding installation of the required packages:
     
     B.  scrcpy compatibility as of March 2022:
 
-        1.  Arch Linux  - the repository version of scrcpy should work in Arch and any Arch based distributions.  
+        1.  Arch Linux - the repository version of scrcpy should work in Arch and any Arch based distributions.  
         It worked for me in Arch.
 
         2.  Ubuntu - the scrcpy Snap package should work in Ubuntu and any Ubuntu based distributions.  In Linux Mint 20.3

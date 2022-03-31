@@ -8,7 +8,9 @@ answer and place calls, configure the device, etc.
 1.  The following packages are required to be installed for it to work:
 
     adb
+    
     scrcpy
+    
     zenity
 
 Notes:
@@ -43,8 +45,4 @@ LMDE 5 - Install from the source code - https://github.com/Genymobile/scrcpy/blo
     b.  In your file manager, open the directory where ScrcpyWiFi.sh is stored, right click on ScrcpyWiFi.sh, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equavlent for your file manager.
 
 
-5.  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable.  
-After the first time using it, the cable should not be required unless your device's IP address changes.  
-I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the 
-IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that 
-IP address has been assigned to another device.)
+5.  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable. After the first time using it, the cable should not be required unless your device's IP address changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that IP address has been assigned to another device.)

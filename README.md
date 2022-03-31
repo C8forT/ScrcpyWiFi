@@ -44,6 +44,7 @@ or create a text file in the directory of your choice, and name the file (e.g., 
 
 
 V.  Make the script file executable:
+
     chmod u+x ScrcpyWiFi.sh
 
 

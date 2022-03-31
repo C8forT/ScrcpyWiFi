@@ -21,12 +21,12 @@ B.  scrcpy compatibility in specific distributions as of March 2022:
 
     Arch Linux - The repository version of scrcpy works.
 
-    Linux Mint 20.3 -  The Snap package of scrcpy works (the repository version of scrcpy does NOT work for me).
+    Linux Mint 20.3 -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
 
-    KDE Neon -  The Snap package of scrcpy works (the repository version of scrcpy does NOT work for me).
+    KDE Neon -  The Snap package of scrcpy works (the repository version of scrcpy did NOT work for me).
 
     LMDE 5 - Install from the source code - https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
-    (the repository and snap versions of scrcpy do not work for me).
+    (the repository and snap versions of scrcpy did not work for me).
 
 
 2.  Reboot your computer after installing the above applications.

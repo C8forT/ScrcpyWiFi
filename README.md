@@ -49,10 +49,11 @@ IV.  Clone this repository:
 OR create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  Then copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
 
 
-V.  Make the script file executable:
+V.  Make the script file executable.  In the terminal change to the directory where ScrcpyWiFi.sh is stored, and enter the following command:
 
     chmod u+x ScrcpyWiFi.sh
-
+    
+Alternatively, you can make the script file executable in your file manager by selecting the file's properties and going to the Permissions tab.
 
 VI.  Make sure your Android device is NOT in sleep mode and you are logged into it.  Launch the script file on your computer and follow the directions in the popup windows.  Your android device also may have a popup message promting you to allow the connection to your computer.  If so, select "Allow".
 

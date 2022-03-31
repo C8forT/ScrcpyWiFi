@@ -36,7 +36,8 @@ Notes regarding the packages:
 
     If launching ScrcpyWiFi.sh at step VI below generates an error indicating that your system has an incorrect version of adb,
     which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb
-    installed on your computer.  Of course, uninstall any other scrcpy installations first.
+    installed on your computer.  Of course, first uninstall any other versions/packages of scrcpy you may have intalled.  Otherwise,
+    you may get errors.
 
 
 III.  Reboot your computer after installing the above applications.

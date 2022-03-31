@@ -8,7 +8,8 @@ INSTRUCTIONS:
 
 1.  Enable USB debugging on your Android device.  The way to enable USB debugging can be different for different devices.  You can do a web search to find out how to do it for your specific device.
 
-2.  Install the following packages on your Linux computer - required:
+
+2.  Install the following required packages on your Linux computer:
 
     adb
     scrcpy

@@ -50,7 +50,7 @@ If launching ScrcpyWiFi.sh at step 6 below generates an error indicating that yo
     
     OR
     
-    B.  In your file manager, open the directory where the script file is stored, right click on the script file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equavlent for your file manager.
+    B.  In your file manager, open the directory where the script file is stored, right click on the script file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equivalent for your file manager.
 
 
 6.  Make sure your Android device is NOT in sleep mode and you are logged into it.  Launch the script file on your computer and follow the directions in the popup windows.  Your android device also may have a popup message promting you to allow the connection to your computer.  If so, select "Allow".

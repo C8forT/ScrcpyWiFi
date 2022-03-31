@@ -40,20 +40,14 @@ IV.  Clone this repository:  git clone https://github.com/C8forT/ScrcpyWiFi
 
 OR
    
-   Create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  Then copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
+Create a text file in the directory of your choice, and name the file (e.g., ScrcpyWiFi.sh).  Then copy the ScrcpyWiFi.sh script code into the text file you just created (now it is a script file), then save and close the file.
 
 
 V.  Make the script file executable:
-
-A.  In the terminal, go into the directory where the script file is stored, then enter chmod u+x ScrcpyWiFi.sh (assuming you named the file "ScrcpyWiFi.sh").
-    
-OR
-    
-B.  In your file manager, open the directory where the script file is stored, right click on the script file, select properties, select the permissions tab, then check the box "Is executable" (in Dolphin), "Allow executing file as program" (in Nemo), or the equivalent for your file manager.
+    chmod u+x ScrcpyWiFi.sh
 
 
 VI.  Make sure your Android device is NOT in sleep mode and you are logged into it.  Launch the script file on your computer and follow the directions in the popup windows.  Your android device also may have a popup message promting you to allow the connection to your computer.  If so, select "Allow".
 
-To launch the script file on your computer, double click the script file from your file manager or launch it from the terminal (e.g., ./ScrcpyWifi.sh).  If you want to launch it from the terminal without actually entering the directory where it is stored, be sure to add to your system a path statement to that directory.  You also can create a menu item for the script code in your desktop menu, which is what I did.  I also added it to my panel.
 
 Note:  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that IP address has been assigned to another device.)

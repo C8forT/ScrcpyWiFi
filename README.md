@@ -31,7 +31,9 @@ Notes regarding the packages:
     LMDE 5 - Install scrcpy from the source code - https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
     (the repository and snap versions of scrcpy did not work for me).
 
-    If launching ScrcpyWiFi.sh at step VI below generates an error indicating that your system has an incorrect version of adb, which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb installed on your computer.  Of course,  uninstall any other scrcpy installations first.
+    If launching ScrcpyWiFi.sh at step VI below generates an error indicating that your system has an incorrect version of adb,
+    which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb
+    installed on your computer.  Of course,  uninstall any other scrcpy installations first.
 
 
 III.  Reboot your computer after installing the above applications.
@@ -52,4 +54,8 @@ V.  Make the script file executable:
 VI.  Make sure your Android device is NOT in sleep mode and you are logged into it.  Launch the script file on your computer and follow the directions in the popup windows.  Your android device also may have a popup message promting you to allow the connection to your computer.  If so, select "Allow".
 
 
-Note:  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network and that IP address has been assigned to another device.)
+    Note:  The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to your computer via a
+    USB cable, then to unplug it. After the first time using it, the cable should not be required unless your device's IP address
+    changes.  I assigned a static IP address to my Android phone in my router, but you also can do that on the phone itself so
+    long as the IP address is outside of your router's DHCP range (problems can arrise if your phone connects to your WiFi network
+    and that IP address has been assigned to another device.)

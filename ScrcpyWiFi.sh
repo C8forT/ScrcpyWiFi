@@ -61,7 +61,7 @@ match="INFO"
 # Define variables
 # command is the command to be executed
 # log is the log file to be generated
-# match is the term being searched for in the log file to determine if scrcpy successfully connects to the device
+# match is the term being searched for in the log file to determine whether scrcpy successfully connects to the device
 
 $command > "$log" 2>&1 &
 # Launch scripy and direct scrcpy output to the log file, automatically creating the log file if it does not exist, 

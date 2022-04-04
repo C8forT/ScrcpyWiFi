@@ -117,7 +117,7 @@ else
     else
     # If Scrcpy does not output "INFO", indicating it has not successfully launched
 
-        zenity --info --text="`printf "WiFi Connection to Phone Twice Failed\n\n\nClick OK Exit"`" --title="Phone Not Connected" --width=250 --height=150  
+        zenity --info --text="`printf "WiFi Connection to Phone Twice Failed\n\nClick OK Exit"`" --title="Phone Not Connected" --width=250 --height=150  
         # Pop-up Window with instructions
 	
         kill $pid

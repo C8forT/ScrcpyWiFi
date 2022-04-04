@@ -50,7 +50,7 @@ zenity --info --text="`printf "Disconnect USB Cable From Phone Now\n\nThen Click
 ##################################################################################################################################################################
 
 #  Function for Launching scrcpy 
-#  If scrcpy Fails to Connect, One Additional Attempt is Made to Establish adb Connection and Execute scrcpy
+#  If scrcpy Fails to Connect, One Additional Attempt is Made to Establish adb Connection and Connect scrcpy
 
 ##################################################################################################################################################################
 

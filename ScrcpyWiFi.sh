@@ -5,7 +5,7 @@
 
 ##################################################################################################################################################################
 
-#  Function for New Connection over WiFi
+#  Function for Establishing adb Connection to Android Device Over WiFi
 
 ##################################################################################################################################################################
 
@@ -49,8 +49,8 @@ zenity --info --text="`printf "Disconnect USB Cable From Phone Now\n\nThen Click
 
 ##################################################################################################################################################################
 
-#  Function for Launching Scrcpy and Re-establishing Connection if adb Connection Fails
-#  Re-establishing Connection is only Attempted Once
+#  Function for Launching scrcpy 
+#  If scrcpy Fails to Connect, One Additional Attempt is Made to Establish adb Connection and Execute scrcpy
 
 ##################################################################################################################################################################
 

@@ -131,3 +131,70 @@ else
 fi
   
 }
+
+
+#################################################################################################################################################################
+
+#  Main Script
+
+##################################################################################################################################################################
+
+
+if adb devices | grep -q 192.* 
+#  Check to see if adb is already connected to the device
+
+
+then
+# If adb is already connected to the device
+
+	sleep 1
+
+	launch_scrcpy
+	# Execute Function to Launch Scrcpy to display device's screen on desktop
+    	
+else
+# If adb is not already connected to the device
+
+	if [ -f "$HOME/.config/scrcpy/ip.txt" ]
+	#  Check to see if the ip.txt file exists
+
+	then
+	# If the ip.txt file exists
+	
+		storedip=$(head -n 1 $HOME/.config/scrcpy/ip.txt) 
+		# Get the stored IP address:portnumber from ip.txt
+
+		if adb connect "$storedip" | grep -q unable*  
+		# Check to see if adb is unable to connect to the stored IP address
+	
+		then
+		# If adb is unable to connect to the stored IP address
+	
+			new_conn
+			# Execute new_conn function for adb to connect to the device
+
+			launch_scrcpy
+			# Execute Function to Launch Scrcpy to display device's screen on desktop
+	    	
+		else
+		# If adb is able to connect to the stored IP address
+    		
+			sleep 1
+
+			launch_scrcpy
+			# Execute Function to Launch Scrcpy to display device's screen on desktop
+    	
+		fi
+    	
+	else
+	# If the ip.txt file does not exist
+	
+		new_conn
+		# Execute new_conn function for adb to connect to the device
+
+		launch_scrcpy
+		# Execute Function to Launch Scrcpy to display device's screen on desktop
+		
+	fi
+   	
+fi

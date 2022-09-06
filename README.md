@@ -32,9 +32,10 @@ Notes regarding installation of the required packages:
         1.  Arch Linux - the repository version of scrcpy should work in Arch and any Arch based distributions.  
         It worked for me in Arch.
 
-        2.  Ubuntu - the scrcpy Snap package should work in Ubuntu and any Ubuntu based distributions.  In Linux Mint 20.3
-        and KDE Neon, which are based on Ubuntu, the scrcpy Snap package worked, but the repository versions did not.
-        
+        2.  Ubuntu -  UPDATE:  As of Sept. 2022, the repository version of scrcpy worked in Linux Mint 21.  
+        I would presume that the repository version of scrcpy will work in Ubuntu 22.04 and other distributions based on Ubuntu 22.04.  
+        If not, the scrcpy Snap package should work in Ubuntu and any Ubuntu based distributions.  
+             
         3.  Debian - for Debian and Debian based distributions (that are not based on Ubuntu), install scrcpy from the source code - 
             
             https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 

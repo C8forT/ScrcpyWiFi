@@ -24,6 +24,7 @@ adb tcpip 5555
 # Initialize port 5555 to enable adb over WiFi
     		
 sleep 2
+# Must use sleep command here - with wait command code hangs if port does not initialize
     		
 ipadd=$(adb shell ip -f inet addr show wlan0 | grep -o 192.*/ | cut -d '/' -f1)
 # Identify the device's WiFi IP address
@@ -73,6 +74,7 @@ pid=$!
 # get pid of last command (scrcpy).
 
 sleep 5
+# Must use sleep command here - with wait command code hangs in some circumstances
 
 if fgrep --quiet "$match" "$log"
 # Check to see if scrcpy outputs "INFO", indicating it has successfully launched
@@ -95,7 +97,7 @@ else
     new_conn
     #Establish new adb connection
 
-    wait
+    sleep 2
 
     $command > "$log" 2>&1 &
     # Launch scripy and again direct scrcpy output to the log file

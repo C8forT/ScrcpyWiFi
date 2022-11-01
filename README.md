@@ -34,7 +34,9 @@ Notes regarding installation of the required packages:
 
         2.  Ubuntu -  UPDATE:  As of Sept. 2022, the repository version of scrcpy worked in Linux Mint 21.  
         I would presume that the repository version of scrcpy will work in Ubuntu 22.04 and other distributions based on Ubuntu 22.04.  
-        If not, the scrcpy Snap package should work in Ubuntu and any Ubuntu based distributions.  
+        If not, the scrcpy Snap package should work in Ubuntu and any Ubuntu based distributions.  UPDATE 2:  As of Nov. 2022 the Snap
+        package stopped working on KDE Neon after upgrading to version 22.04.  Uninstall the Snap version and install the repository
+        version.
              
         3.  Debian - for Debian and Debian based distributions (that are not based on Ubuntu), install scrcpy from the source code - 
             

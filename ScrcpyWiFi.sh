@@ -76,7 +76,7 @@ pid=$!
 sleep 5
 # Must use sleep command here - with wait command code hangs in some circumstances
 
-if fgrep --quiet "$match" "$log"
+if grep -F --quiet "$match" "$log"
 # Check to see if scrcpy outputs "INFO", indicating it has successfully launched
 
 then
@@ -107,7 +107,7 @@ else
 
     sleep 5
 
-    if fgrep --quiet "$match" "$log"
+    if grep -F --quiet "$match" "$log"
     # Check to see if scrcpy outputs "INFO", indicating it has successfully launched
 
     then

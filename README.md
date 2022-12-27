@@ -25,7 +25,9 @@ Notes regarding installation of the required packages:
     
     The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, 
     which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5. Thus, you can install adb
-    and zenity via your package manager or software store.
+    and zenity via your package manager or software store.  
+    UPDATE - As of 12/27/22 adb no longer appears to be in the Arch Linux repository as a stand-alone package.  Instead, 
+    install "android-tools", which includes adb.
     
     B.  scrcpy compatibility as of March 2022:
 

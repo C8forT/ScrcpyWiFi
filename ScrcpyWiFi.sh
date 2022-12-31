@@ -146,7 +146,6 @@ fi
 if adb devices | grep -q 192.* 
 #  Check to see if adb is already connected to the device
 
-
 then
 # If adb is already connected to the device
 

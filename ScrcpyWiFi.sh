@@ -23,7 +23,7 @@ wait
 adb tcpip 5555 
 # Initialize port 5555 to enable adb over WiFi
     		
-sleep 2
+sleep 5
 # Must use sleep command here - with wait command code hangs if port does not initialize
     		
 ipadd=$(adb shell ip -f inet addr show wlan0 | grep -o 192.*/ | cut -d '/' -f1)

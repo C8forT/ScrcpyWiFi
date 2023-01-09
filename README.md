@@ -26,8 +26,9 @@ Notes regarding installation of the required packages:
     A.  adb and zenity compatibility as of March 2022:
     
     The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, 
-    which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon 20.3 and LMDE 5. Thus, you can install adb
-    and zenity via your package manager or software store.  
+    which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon, LMDE 5 and Fedora. Thus, you can install adb
+    and zenity via your package manager or software store.  UPDATE Jan. 2023 - adb is in the Fedora repository, and Fedora 37
+    includes zenity by default.
    
     B.  scrcpy compatibility as of March 2022:
 
@@ -45,6 +46,11 @@ Notes regarding installation of the required packages:
             https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
     
         The repository and Snap versions of scrcpy did not work for me in LMDE 5, which is based on Debian.
+        
+        4.  Fedora (Jan. 2023) - scrcpy is not in the main Fedora repository.  I accessed it from the Fedora Copr repository, which is 
+        a user repository:
+                sudo dnf copr enable zeno/scrcpy
+                sudo dnf install scrcpy
     
     If launching ScrcpyWiFi.sh at step VI below generates an error indicating that your system has an incorrect version of adb,
     which happened to me on LMDE 5, installing scrcpy from the source code should force scrcpy to work with the version of adb

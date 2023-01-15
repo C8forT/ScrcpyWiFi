@@ -15,12 +15,6 @@ new_conn () {
 zenity --info --text="`printf "Connect Phone to Computer Via USB - Make Sure Phone is Not in Sleep Mode nor Locked\n\nThen Click OK to Continue"`" --title="Connect Phone" --width=250 --height=150
 # Pop-up Window with instructions
 		
-adb kill-server
-adb start-server
-# Restart adb server
-   		
-wait
-   		
 adb tcpip 5555 
 # Initialize port 5555 to enable adb over WiFi
     		
@@ -156,6 +150,12 @@ then
 else
 # If adb is not already connected to the device
 
+    adb kill-server
+    wait
+    adb start-server
+    wait
+    # Restart adb server
+
 	if [ -f "$HOME/.config/scrcpy/ip.txt" ]
 	#  Check to see if the ip.txt file exists
 
@@ -165,22 +165,20 @@ else
 		storedip=$(head -n 1 $HOME/.config/scrcpy/ip.txt) 
 		# Get the stored IP address:portnumber from ip.txt
 
-		if adb connect "$storedip" | grep -q unable*  
-		# Check to see if adb is unable to connect to the stored IP address
-	
-		then
-		# If adb is unable to connect to the stored IP address
-	
-			new_conn
-			# Execute new_conn function for adb to connect to the device
+      	if adb connect "$storedip" | grep -q $storedip
+		# Check to see if adb is able to connect to the stored IP address
 
+       	then
+		# If adb is able to connect to the stored IP address
+	
 			launch_scrcpy
 			# Execute Function to Launch Scrcpy to display device's screen on desktop
-	    	
+
 		else
-		# If adb is able to connect to the stored IP address
-    		
-			wait
+		# If adb is unable to connect to the stored IP address
+
+            new_conn
+			# Execute new_conn function for adb to connect to the device
 
 			launch_scrcpy
 			# Execute Function to Launch Scrcpy to display device's screen on desktop

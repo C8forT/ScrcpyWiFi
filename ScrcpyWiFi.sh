@@ -167,30 +167,21 @@ else
 		
 		wait
 
-      		if adb connect "$storedip" | grep -q $storedip
+  		if adb connect "$storedip" | grep -q $storedip
 		# Check to see if adb is able to connect to the stored IP address
 
-       		then
+   		then
 		# If adb is able to connect to the stored IP address
 	
-			launch_scrcpy
-			# Execute Function to Launch Scrcpy to display device's screen on desktop
+		    launch_scrcpy
+		    # Execute Function to Launch Scrcpy to display device's screen on desktop
 			
-			wait
+		    wait
 
-		else
-		# If adb is unable to connect to the stored IP address
-
-           		new_conn
-			# Execute new_conn function for adb to connect to the device
-
-			launch_scrcpy
-			# Execute Function to Launch Scrcpy to display device's screen on desktop
-    	
-		fi
+	    	fi
     	
 	else
-	# If the ip.txt file does not exist
+	# If the ip.txt file does not exist or unable to connect to the stored IP address
 	
 		new_conn
 		# Execute new_conn function for adb to connect to the device

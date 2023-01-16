@@ -165,10 +165,10 @@ else
 		storedip=$(head -n 1 $HOME/.config/scrcpy/ip.txt) 
 		# Get the stored IP address:portnumber from ip.txt
 
-      	if adb connect "$storedip" | grep -q $storedip
+      		if adb connect "$storedip" | grep -q $storedip
 		# Check to see if adb is able to connect to the stored IP address
 
-       	then
+       		then
 		# If adb is able to connect to the stored IP address
 	
 			launch_scrcpy
@@ -177,7 +177,7 @@ else
 		else
 		# If adb is unable to connect to the stored IP address
 
-            new_conn
+           		new_conn
 			# Execute new_conn function for adb to connect to the device
 
 			launch_scrcpy

@@ -150,11 +150,11 @@ then
 else
 # If adb is not already connected to the device
 
-    adb kill-server
-    wait
-    adb start-server
-    wait
-    # Restart adb server
+	adb kill-server
+	wait
+	adb start-server
+	wait
+	# Restart adb server
 
 	if [ -f "$HOME/.config/scrcpy/ip.txt" ]
 	#  Check to see if the ip.txt file exists
@@ -167,10 +167,10 @@ else
 		
 		wait
 
-  		if adb connect "$storedip" | grep -q $storedip
+        	if adb connect "$storedip" | grep -q $storedip
 		# Check to see if adb is able to connect to the stored IP address
 
-   		then
+       		then
 		# If adb is able to connect to the stored IP address
 	
 		    launch_scrcpy
@@ -178,7 +178,7 @@ else
 			
 		    wait
 
-	    	fi
+        	fi
     	
 	else
 	# If the ip.txt file does not exist or unable to connect to the stored IP address

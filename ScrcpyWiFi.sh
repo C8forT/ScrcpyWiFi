@@ -142,11 +142,11 @@ if adb devices | grep -q 192.*
 then
 # If adb is already connected to the device
 
-	wait
-
 	launch_scrcpy
 	# Execute Function to Launch Scrcpy to display device's screen on desktop
     	
+	wait
+	
 else
 # If adb is not already connected to the device
 
@@ -175,6 +175,8 @@ else
 	
 			launch_scrcpy
 			# Execute Function to Launch Scrcpy to display device's screen on desktop
+			
+			wait
 
 		else
 		# If adb is unable to connect to the stored IP address

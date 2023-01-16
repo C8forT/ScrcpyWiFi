@@ -164,6 +164,8 @@ else
 	
 		storedip=$(head -n 1 $HOME/.config/scrcpy/ip.txt) 
 		# Get the stored IP address:portnumber from ip.txt
+		
+		wait
 
       		if adb connect "$storedip" | grep -q $storedip
 		# Check to see if adb is able to connect to the stored IP address

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #  This script connects Linux to Android device over WiFi and mirrors the device's display on the Linux desktop
-#  Version 1.4
+#  Version 1.4.1
 
 
 #############################################################################################################################################################
@@ -29,6 +29,8 @@ ipfull="$ipadd:5555"
 
 mkdir -p $HOME/.config/scrcpy
 # Make directory where ip.txt will be stored if it does not already exist
+
+wait
     		
 echo "$ipfull" >| $HOME/.config/scrcpy/ip.txt  
 # Store the IP address:portnumber to ip.txt
@@ -71,7 +73,7 @@ pid=$!
 sleep 5
 # Must use sleep command here - with wait command code hangs in some circumstances
 
-if grep -F --quiet "$match" "$log"
+if grep -F -q "$match" "$log"
 # Check to see if scrcpy outputs "INFO", indicating it has successfully launched
 
 then
@@ -102,7 +104,7 @@ else
 
     sleep 5
 
-    if grep -F --quiet "$match" "$log"
+    if grep -F -q "$match" "$log"
     # Check to see if scrcpy outputs "INFO", indicating it has successfully launched
 
     then
@@ -150,11 +152,11 @@ then
 else
 # If adb is not already connected to the device
 
-	adb kill-server
-	wait
-	adb start-server
-	wait
-	# Restart adb server
+    adb kill-server
+    wait
+    adb start-server
+    wait
+    # Restart adb server
 
 	if [ -f "$HOME/.config/scrcpy/ip.txt" ]
 	#  Check to see if the ip.txt file exists
@@ -167,26 +169,35 @@ else
 		
 		wait
 
-        	if adb connect "$storedip" | grep -q $storedip
-		# Check to see if adb is able to connect to the stored IP address
+        if adb connect "$storedip" | grep -q "connected to $storedip"
+        # Check to see if adb is able to connect to the stored IP address
 
-       		then
-		# If adb is able to connect to the stored IP address
+        then
+        # If adb is able to connect to the stored IP address
 	
-		    launch_scrcpy
-		    # Execute Function to Launch Scrcpy to display device's screen on desktop
+            launch_scrcpy
+            # Execute Function to Launch Scrcpy to display device's screen on desktop
 			
-		    wait
+            wait
 
-        	fi
-    	
-	else
-	# If the ip.txt file does not exist or unable to connect to the stored IP address
+        else
+        # If the ip.txt file does not exist or unable to connect to the stored IP address
 	
-		new_conn
-		# Execute new_conn function for adb to connect to the device
+            new_conn
+            # Execute new_conn function for adb to connect to the device
 
-		launch_scrcpy
+            launch_scrcpy
+            # Execute Function to Launch Scrcpy to display device's screen on desktop
+
+        fi
+    	
+    else
+    # If the ip.txt file does not exist or unable to connect to the stored IP address
+	
+        new_conn
+        # Execute new_conn function for adb to connect to the device
+
+        launch_scrcpy
 		# Execute Function to Launch Scrcpy to display device's screen on desktop
 		
 	fi

@@ -44,7 +44,6 @@ zenity --info --text="`printf "Disconnect USB Cable From Phone Now\n\nThen Click
 }
 
 
-
 #############################################################################################################################################################
 
 #  Function for Launching scrcpy 

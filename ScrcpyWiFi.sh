@@ -180,7 +180,7 @@ else
             wait
 
         else
-        # If the ip.txt file does not exist or unable to connect to the stored IP address
+        # If adb is unable to connect to the stored IP address
 	
             new_conn
             # Execute new_conn function for adb to connect to the device
@@ -191,7 +191,7 @@ else
         fi
     	
     else
-    # If the ip.txt file does not exist or unable to connect to the stored IP address
+    # If the ip.txt file does not exist
 	
         new_conn
         # Execute new_conn function for adb to connect to the device

@@ -190,7 +190,7 @@ else
 
         fi
     	
-    else
+	else
     # If the ip.txt file does not exist
 	
         new_conn

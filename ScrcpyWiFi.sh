@@ -84,47 +84,46 @@ then
 else
 # If Scrcpy does not output "INFO", indicating it has not successfully launched
  	    
-    zenity --info --text="`printf "WiFi Connection to Phone Failed\n\nClick OK to Retry"`" --title="Phone Not Connected" --width=250 --height=150  
-    # Pop-up Window with instructions
+	zenity --info --text="`printf "WiFi Connection to Phone Failed\n\nClick OK to Retry"`" --title="Phone Not Connected" --width=250 --height=150  
+	# Pop-up Window with instructions
 	
-    kill $pid
-    #kill scrcpy
+	kill $pid
+	#kill scrcpy
 
-    new_conn
-    #Establish new adb connection
+	new_conn
+	#Establish new adb connection
 
-    sleep 2
+	sleep 2
 
-    $command > "$log" 2>&1 &
-    # Launch scripy and again direct scrcpy output to the log file
+	$command > "$log" 2>&1 &
+	# Launch scripy and again direct scrcpy output to the log file
     
-    pid=$!
-    # get pid of last command (scrcpy).
+	pid=$!
+	# get pid of last command (scrcpy).
+	sleep 5
 
-    sleep 5
-
-    if grep -F -q "$match" "$log"
-    # Check to see if scrcpy outputs "INFO", indicating it has successfully launched
-
-    then
-    # If Scrcpy outputs "INFO", indicating it has successfully launched
-
-        exit 0
-        # Exit script
-
-    else
-    # If Scrcpy does not output "INFO", indicating it has not successfully launched
-
-        zenity --info --text="`printf "WiFi Connection to Phone Twice Failed\n\nClick OK Exit"`" --title="Phone Not Connected" --width=250 --height=150  
-        # Pop-up Window with instructions
+	if grep -F -q "$match" "$log"
+	# Check to see if scrcpy outputs "INFO", indicating it has successfully launched
 	
-        kill $pid
-        #kill scrcpy
-   
-        exit 0 
-        # Exit script
+	then
+	# If Scrcpy outputs "INFO", indicating it has successfully launched
 
-    fi
+		exit 0
+		# Exit script
+
+	else
+	# If Scrcpy does not output "INFO", indicating it has not successfully launched
+
+		zenity --info --text="`printf "WiFi Connection to Phone Twice Failed\n\nClick OK Exit"`" --title="Phone Not Connected" --width=250 --height=150  
+		# Pop-up Window with instructions
+	
+		kill $pid
+		#kill scrcpy
+   
+		exit 0 
+		# Exit script
+
+	fi
 
 fi
   
@@ -151,11 +150,11 @@ then
 else
 # If adb is not already connected to the device
 
-    adb kill-server
-    wait
-    adb start-server
-    wait
-    # Restart adb server
+	adb kill-server
+	wait
+	adb start-server
+	wait
+	# Restart adb server
 
 	if [ -f "$HOME/.config/scrcpy/ip.txt" ]
 	#  Check to see if the ip.txt file exists
@@ -168,35 +167,35 @@ else
 		
 		wait
 
-        if adb connect "$storedip" | grep -q "connected to $storedip"
-        # Check to see if adb is able to connect to the stored IP address
+		if adb connect "$storedip" | grep -q "connected to $storedip"
+		# Check to see if adb is able to connect to the stored IP address
 
-        then
-        # If adb is able to connect to the stored IP address
+		then
+		# If adb is able to connect to the stored IP address
 	
-            launch_scrcpy
-            # Execute Function to Launch Scrcpy to display device's screen on desktop
+			launch_scrcpy
+			# Execute Function to Launch Scrcpy to display device's screen on desktop
 			
-            wait
+			wait
 
-        else
-        # If adb is unable to connect to the stored IP address
+		else
+		# If adb is unable to connect to the stored IP address
 	
-            new_conn
-            # Execute new_conn function for adb to connect to the device
+			new_conn
+			# Execute new_conn function for adb to connect to the device
 
-            launch_scrcpy
-            # Execute Function to Launch Scrcpy to display device's screen on desktop
+			launch_scrcpy
+			# Execute Function to Launch Scrcpy to display device's screen on desktop
 
-        fi
+		fi
     	
 	else
-    # If the ip.txt file does not exist
+	# If the ip.txt file does not exist
 	
-        new_conn
-        # Execute new_conn function for adb to connect to the device
+		new_conn
+		# Execute new_conn function for adb to connect to the device
 
-        launch_scrcpy
+		launch_scrcpy
 		# Execute Function to Launch Scrcpy to display device's screen on desktop
 		
 	fi

@@ -4,6 +4,8 @@ ScrcpyWiFi.sh mirrors your Android Device's screen to your Linux desktop over Wi
 
 You will need to connect your device to your comuputer via USB the first time you execute the script code, but should not need to do so after that unless your device's IP address changes.  Version 1.4 improves the consistency of re-connection without need to re-plug the device into the USB port. 
 
+*** NOTE:  As of the first week of July, 2023, on Arch Linux with KDE Plasma the Zenity pop-up windows now are too small when using 4k display resolution with 200% scaling.  My hypothesis is that display scaling has stopped being applied to Zenity windows when running on the newest Linux kernels.  The issue started with the arch variant of Kernel 6.4.1, and still persists in 6.4.2.  So far, Arch/KDE Plasma is the only distribution/desktop in my test suite where this issue is occuring.  If you encounter this issue on Arch or any other distribution, in the ScrpyWiFi script code change "--width=250 --height=150" to "--width=600 --height=400" at lines 15, 41, 87 and 117.  Even easier, just use the search option in Kate to replace "--width=250 --height=150" with "--width=600 --height=400".  
+
 INSTRUCTIONS:
 
 I.  Activate USB debugging on your Android device.  Also activate the option to "Disable adb authorization timeout" if your device has that option.   

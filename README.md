@@ -10,9 +10,10 @@ INSTRUCTIONS:
 
 I.  Activate USB debugging on your Android device.  Also activate the option to "Disable adb authorization timeout" if your device has that option.   
 
-    The way to activate USB debugging can be different for different devices.  You can do a web search to find out how to do it
-    for your specific device.  Usually you need to enable Developer options on your Android device, then under Developer options
-    activate USB debugging and activate the option to "Disable adb authorization timeout".
+    The way to activate USB debugging can be different for different devices.  You can do a web
+    search to find out how to do it for your specific device.  Usually you need to enable 
+    Developer options on your Android device, then under Developer options activate USB
+    debugging and activate the option to "Disable adb authorization timeout".
 
 
 II.  Install the following required packages on your Linux computer:
@@ -27,21 +28,21 @@ Notes regarding installation of the required packages:
 
     A.  adb and zenity compatibility as of March 2022:
     
-    The repository versions of adb and zenity worked for me in each of the distributions on which I tried the script code, 
-    which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon, LMDE 5 and Fedora. Thus, you can install adb
-    and zenity via your package manager or software store.  UPDATE Jan. 2023 - adb is in the Fedora repository, and Fedora 37
-    includes zenity by default.
+    The repository versions of adb and zenity worked for me in each of the distributions on which
+    I tried the script code, which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon,
+    LMDE 5 and Fedora. Thus, you can install adb and zenity via your package manager or software store.
+    UPDATE Jan. 2023 - adb is in the Fedora repository, and Fedora 37 includes zenity by default.
    
     B.  scrcpy compatibility as of March 2022:
 
-        1.  Arch Linux - the repository version of scrcpy should work in Arch and any Arch based distributions.  
-        It worked for me in Arch.
+        1.  Arch Linux - the repository version of scrcpy should work in Arch and any Arch based
+        distributions.  It worked for me in Arch.
 
-        2.  Ubuntu -  UPDATE:  As of Sept. 2022, the repository version of scrcpy worked in Linux Mint 21.  
-        I would presume that the repository version of scrcpy will work in Ubuntu 22.04 and other distributions based on Ubuntu 22.04.  
-        If not, the scrcpy Snap package should work in Ubuntu and any Ubuntu based distributions.  UPDATE 2:  As of Nov. 2022 the Snap
-        package stopped working on KDE Neon after upgrading to version 22.04.  If you have the Snap version installed and run into
-        problems, uninstall it and install the repository version.
+        2.  Ubuntu -  UPDATE:  As of Sept. 2022, the repository version of scrcpy worked in 
+        Linux Mint 21.  I would presume that the repository version of scrcpy will work in Ubuntu 22.04
+        and other distributions based on Ubuntu 22.04.  As of Nov. 2022 the Snap package for
+        scrcpy stopped working on KDE Neon after upgrading to version 22.04.  If you have the Snap version
+        installed and run into problems, uninstall it and install the repository version.
              
         3.  Debian - for Debian and Debian based distributions (that are not based on Ubuntu), install scrcpy from the source code - 
             

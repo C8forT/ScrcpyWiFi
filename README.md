@@ -29,9 +29,10 @@ Notes regarding installation of the required packages:
     A.  adb and zenity compatibility as of March 2022:
     
     The repository versions of adb and zenity worked for me in each of the distributions on which
-    I tried the script code, which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint Cinnamon,
-    LMDE 5 and Fedora. Thus, you can install adb and zenity via your package manager or software store.
-    UPDATE Jan. 2023 - adb is in the Fedora repository, and Fedora 37 includes zenity by default.
+    I tried the script code, which are Arch Linux (both X11 and Wayland), KDE Neon, Linux Mint
+    Cinnamon, LMDE 5 and Fedora. Thus, you can install adb and zenity via your package manager
+    or software store.  UPDATE Jan. 2023 - adb is in the Fedora repository, and Fedora 37 includes
+    zenity by default.
    
     B.  scrcpy compatibility as of March 2022:
 
@@ -39,13 +40,13 @@ Notes regarding installation of the required packages:
         distributions.  It worked for me in Arch.
 
         2.  Ubuntu -  UPDATE:  As of Sept. 2022, the repository version of scrcpy worked in 
-        Linux Mint 21.  I would presume that the repository version of scrcpy will work in Ubuntu 22.04
-        and other distributions based on Ubuntu 22.04.  As of Nov. 2022 the Snap package for
+        Linux Mint 21.  I would presume that the repository version of scrcpy will work in Ubuntu
+        22.04 and other distributions based on Ubuntu 22.04.  As of Nov. 2022 the Snap package for
         scrcpy stopped working on KDE Neon after upgrading to version 22.04.  If you have the Snap
         version installed and run into problems, uninstall it and install the repository version.
              
-        3.  Debian - for Debian and Debian based distributions (that are not based on Ubuntu), install
-        scrcpy from the source code - 
+        3.  Debian - for Debian and Debian based distributions (that are not based on Ubuntu),
+        install scrcpy from the source code - 
             
             https://github.com/Genymobile/scrcpy/blob/master/BUILD.md#simple 
     
@@ -100,13 +101,14 @@ Optionally, create a path statement, e.g., in ~/.bash_profile or ~/.bashrc, to t
     The first time you execute ScrcpyWiFi.sh, you will be prompted to plugin your Android device to
     your computer via a     USB cable, then to unplug it. After the first time using it, the cable
     should not be required unless your device's IP address changes or your Android device removes
-    your computer from the allowed connections after some time.  I have noticed that if I don't connect
-    my Phone to my system for some time, maybe a week or so, my phone no longer recognizes my computer
-    as an allowed connection and I am prompted again to plug my phone into the computer and repeat the
-    first connection process.
+    your computer from the allowed connections after some time.  I have noticed that if I don't
+    connect my Phone to my system for some time, maybe a week or so, my phone no longer recognizes
+    my computer as an allowed connection and I am prompted again to plug my phone into the computer
+    and repeat the first connection process.
     
     I assigned a static IP address to my Android phone in my router, but you also can do that on the
     phone itself so long as the IP address is outside of your router's DHCP range (problems can arrise
-    if your phone connects to your WiFi network and that IP address has been assigned to another device.)
+    if your phone connects to your WiFi network and that IP address has been assigned to another
+    device.)
     
 VII. (Optional) Create a menu item for ScrcpyWiFi.sh in your desktop's menu.  Once the menu item is created, you also can add the menu item to your panel and/or, in some destop environments, to your desktop.

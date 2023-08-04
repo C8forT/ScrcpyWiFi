@@ -53,17 +53,17 @@ Notes regarding installation of the required packages:
         The repository and Snap versions of scrcpy did not work for me in LMDE 5, which is based on
         Debian.
         
-        4.  Fedora (Jan. 2023) - scrcpy is not in the main Fedora repository.  I accessed it from the
-        Fedora Copr repository, which is a user repository:
+        4.  Fedora (Jan. 2023) - scrcpy is not in the main Fedora repository.  I accessed it from
+        the Fedora Copr repository, which is a user repository:
         
                 sudo dnf copr enable zeno/scrcpy
                 sudo dnf install scrcpy
     
-    If launching ScrcpyWiFi.sh at step VI below generates an error indicating that your system has an
-    incorrect version of adb, which happened to me on LMDE 5, installing scrcpy from the source code
-    should force scrcpy to work with the version of adb installed on your computer.  Of course, first
-    uninstall any other versions of scrcpy you may have intalled.  Otherwise, you still may get errors
-    if you have multiple versions of scrcpy installed.
+    If launching ScrcpyWiFi.sh at step VI below generates an error indicating that your system has
+    an incorrect version of adb, which happened to me on LMDE 5, installing scrcpy from the source
+    code should force scrcpy to work with the version of adb installed on your computer.  Of course,
+    first uninstall any other versions of scrcpy you may have intalled.  Otherwise, you still may
+    get errors if you have multiple versions of scrcpy installed.
     
 
 III.  Reboot your computer after installing the required packages.

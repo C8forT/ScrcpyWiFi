@@ -8,7 +8,7 @@ Version 1.5:
 
 The previous version of ScrcpyWiFi is now ScrcpyWiFi_GTK and continues to use Zenity for dialogues.  This version is for GTK based desktops, e.g., Gnome, Cinnamon, XFCE, Mate, etc.
 
-ScrcpyWiFi_QT uses kdialog for dialogues instead of Zenity.  This version if for QT based desktops, e.g., KDE Plasma, LXQT, etc.
+ScrcpyWiFi_QT uses kdialog for dialogues instead of Zenity.  This version is for QT based desktops, e.g., KDE Plasma, LXQT, etc.
 
 INSTRUCTIONS:
 

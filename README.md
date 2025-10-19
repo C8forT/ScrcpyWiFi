@@ -1,3 +1,7 @@
+Version 2 has been released.  Use that.  It adds functionality to close adb after scrcpy closes.  Leaving adb open after the device disconnected causes system freezes in LMDE 7, which is based on Debian 13.  It may be happening in other environments as well.
+
+
+
 # ScrcpyWiFi v1.5
 
 ScrcpyWiFi is a script file that mirrors your Android Device's screen to your Linux desktop over WiFi.  You can control your Android device using your keyboard and mouse to do virtually everything you can do from your device's touch screen, for example to read and send text messages and e-mails, answer and place calls, manage contacts, configure the device, etc.  

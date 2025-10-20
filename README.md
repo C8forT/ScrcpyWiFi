@@ -1,4 +1,4 @@
-Version 2 has been released.  Use that.  It is on the right under Releases. It adds functionality to close adb after scrcpy closes.  Leaving adb open after the device disconnected causes system freezes in LMDE 7, which is based on Debian 13.  It may be happening in other environments as well.
+Version 2 has been released.  Use that.  It is on the right under Releases. It adds functionality to close adb after scrcpy closes.  Leaving adb open after the device disconnects causes system freezes in LMDE 7, which is based on Debian 13.  It may be happening in other environments as well.
 
 
 

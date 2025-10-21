@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #  This script connects Linux to Android device over WiFi and mirrors the device's display on the Linux desktop
-#  Version 1.5 GTK
+#  Version 2.0 GTK
 
 
 #############################################################################################################################################################
@@ -78,8 +78,8 @@ if grep -F -q "$match" "$log"
 then
 # If Scrcpy outputs "INFO", indicating it has successfully launched
 
-	exit 0
-	# Exit script
+    delay_close_adb
+    #close adb after Scrcpy is closed	
 
 else
 # If Scrcpy does not output "INFO", indicating it has not successfully launched
@@ -108,8 +108,8 @@ else
 	then
 	# If Scrcpy outputs "INFO", indicating it has successfully launched
 
-		exit 0
-		# Exit script
+        delay_close_adb
+        #close adb after Scrcpy is closed	
 
 	else
 	# If Scrcpy does not output "INFO", indicating it has not successfully launched
@@ -119,7 +119,10 @@ else
 	
 		kill $pid
 		#kill scrcpy
-   
+
+        adb kill-server
+        #kill adb
+
 		exit 0 
 		# Exit script
 
@@ -129,7 +132,27 @@ fi
   
 }
 
+#############################################################################################################################################################
 
+#  Function for monitoring when scrcpy closes, then close the adb server.
+#  Leaving the adb server running after scrcpy closes is causing some systems to freeze.
+
+#############################################################################################################################################################
+
+delay_close_adb () {
+
+while kill -0 "$pid" 2>/dev/null; do
+    sleep 5 # Check every 5 seconds to see if scrcpy has closed
+done
+
+adb kill-server
+#kill adb after close of scrcpy is detected
+
+exit 0
+# Exit script
+
+}
+	
 ############################################################################################################################################################
 
 #  Main Script

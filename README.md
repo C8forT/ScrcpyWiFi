@@ -4,9 +4,9 @@ ScrcpyWiFi is a script file that mirrors your Android Device's screen to your Li
 
 You will need to connect your device to your comuputer via USB the first time you execute the script code, but should not need to do so after that unless your device's IP address changes.  
 
-Version 1.5:
+Version 2.0:
 
-The previous version of ScrcpyWiFi is now ScrcpyWiFi_GTK and continues to use Zenity for dialogues.  This version is for GTK based desktops, e.g., Gnome, Cinnamon, XFCE, Mate, etc.
+Version 2.0 adds functionality to close adb after scrcpy closes, which occurs when the Android device is disconnected from the computer.  This addresses an issue encountered in LMDE 7 where the desktop session freezes when the device is disconnected and the adb service is still running.  LMDE 7.0 is based on Debian 13, and it is possible this issue occurs in other distributions based on Debian 13.
 
 ScrcpyWiFi_QT uses kdialog for dialogues instead of Zenity.  This version is for QT based desktops, e.g., KDE Plasma, LXQT, etc.
 

@@ -28,7 +28,8 @@ II.  Install the following required packages on your Linux computer:
     zenity (if using a GTK based desktop)
     kdialog (if using a QT based desktop)
     
-    (If adb is not in your distribution's repository, install android-tools, which includes adb, or install andoid-tools-adb, depending on what your distribution has available.)
+    (If adb is not in your distribution's repository, install android-tools, which includes adb, or install
+    andoid-tools-adb, depending on what your distribution has available.)
 
 Notes regarding installation of the required packages:
 

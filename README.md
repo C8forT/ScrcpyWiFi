@@ -8,7 +8,8 @@ Version 2.0:
 
 Version 2.0 adds functionality to close adb after scrcpy closes, which occurs when the Android device is disconnected from the computer.  This addresses an issue encountered in LMDE 7 where the desktop session freezes when the device is disconnected and the adb service is still running.  LMDE 7.0 is based on Debian 13, and it is possible this issue occurs in other distributions based on Debian 13.
 
-ScrcpyWiFi_QT uses kdialog for dialogues instead of Zenity.  This version is for QT based desktops, e.g., KDE Plasma, LXQT, etc.
+ScrcpyWiFi_QT uses kdialog for popup windows and is for use with QT based Desktop environments (e.g., KDE Plasma, LXQT, etc.).  
+ScrcpyWiFi_GTK uses zenety for popup windows and is for use with GTK based Desktop environments (e.g., Gnome, Cinnamon, etc.).  
 
 INSTRUCTIONS:
 

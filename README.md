@@ -2,7 +2,9 @@
 
 ScrcpyWiFi is a script file that mirrors your Android Device's screen to your Linux desktop over WiFi.  You can control your Android device using your keyboard and mouse to do virtually everything you can do from your device's touch screen, for example to read and send text messages and e-mails, answer and place calls, manage contacts, configure the device, etc.  
 
-You will need to connect your device to your comuputer via USB the first time you execute the script code, but should not need to do so after that unless your device's IP address changes.  
+You will need to connect your device to your comuputer via USB the first time you execute the script code, but should not need to do so after that unless your device's IP address changes.
+
+* Note - March, 2026:  The version of scrcpy in Linux Mint 22.3 (and probably other Debian/Ubuntu based distributions) is not compatible with the latest version of Android, though it still works with older Android devices.  If you have a newer Android device and run into an issue with scrcpy, uninstall the one from the repository and install the latest version: https://github.com/Genymobile/scrcpy/blob/master/doc/linux.md
 
 Version 2.0:
 
